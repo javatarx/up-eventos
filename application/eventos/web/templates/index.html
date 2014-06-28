@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<link rel="stylesheet" href="{{STATIC_URL}}css/base.css?v=3.6" />
+		<link rel="stylesheet" href="{{STATIC_URL}}css/base.css" />
 		<link rel="stylesheet" href="{{STATIC_URL}}css/layout.css" type="text/css" media="all">
 		<link rel="stylesheet" href="{{STATIC_URL}}css/style.css" type="text/css" media="all">
+		<link rel="stylesheet" href="{{STATIC_URL}}css/fuentes.css" type="text/css"/>
+		<link rel="stylesheet" href="{{STATIC_URL}}css/estilo.css" type="text/css" media="all">
 		<script src="{{STATIC_URL}}js/jquery-1.3.2.js"></script>
-		<script src="{{STATIC_URL}}js/form-hola.js"></script>
 		<!--
 		<script>
 		$(document).ready(function() {
@@ -60,10 +61,10 @@
 								<a href="/podcast" title="Podcast">Mas</a>
 							</li>
 							<li class="tab" data-display="social-login">
-								<a href="https://cursos.eventos.lo" title="Platzi"> <img src="{{STATIC_URL}}images/icon3.jpg" alt="eventos.lo" height="20" width="20" /> Login </a>
+								<a class="ancla-menu" href="https://cursos.eventos.lo" title="Eventos"> <img src="{{STATIC_URL}}images/icon3.jpg" alt="eventos.lo" height="20" width="20" /> Login </a>
 							</li>
 							<li class="tab" data-display="social-login">
-								<a href="https://upeu.edu.pe/login/facebook" class="btn facebook small icon-facebook" > <img src="{{STATIC_URL}}images/icon1.jpg" alt="mejorando.la" height="30" width="30" /></a>
+								<a class="ancla-menu" href="https://upeu.edu.pe/login/facebook" class="btn facebook small icon-facebook" > <img src="{{STATIC_URL}}images/icon1.jpg" alt="mejorando.la" height="30" width="30" /></a>
 							</li>
 						</ul>
 					</nav>
@@ -143,10 +144,10 @@
 			{% if eventos %}
 
 			<article id="content">
-				<div class="wrap">
+				<div class="wrap" style="margin: 0 auto;">
 
 					{% for e in eventos %}
-					<section class="cols">
+					<section class="cols" >
 						<div class="box">
 							<div>
 								<h1>Evento <span>Destacados!</span></h1>
@@ -195,21 +196,22 @@
 			</div>
 
 			-->
-			</div>
-			
-			<footer id="footer" class="footer clearfix">
-				<div class="container">
-					<img src="/static/images/logos/mejorandola-white.png" alt="Mejorando.la" width="158" height="36">
-					<div class="right social-follow">
-						<div>
-							<span>Síguenos</span>
-							<a href="//twitter.com/" class="icon-twitter" target="_blank"></a>
-							<a href="https://www.facebook.com" class="icon-facebook"  target="_blank"></a>
-							<a href="https://plus.google.com" class="icon-google-plus"  target="_blank"></a>
-						</div>
+		</div>
+
+		<footer id="footer" class="footer clearfix">
+			<div class="container">
+				<img src="/static/images/logos/mejorandola-white.png" alt="Mejorando.la" width="158" height="36">
+				<div class="right social-follow">
+					<div>
+						<span>Síguenos</span>
+						<a href="//twitter.com/" class="icon-twitter" target="_blank"></a>
+						<a href="https://www.facebook.com" class="icon-facebook"  target="_blank"></a>
+						<a href="https://plus.google.com" class="icon-google-plus"  target="_blank"></a>
 					</div>
 				</div>
-			</footer>
+			</div>
+		</footer>
+		<script data-main="{{STATIC_URL}}js/home.js" src="{{STATIC_URL}}js/require-jquery.js"></script>
 	</body>
 </html>
 

@@ -10,9 +10,9 @@
 	.clearfix:after{background: red;clear:both;content:"\0020";display:block;height:0;visibility:hidden}
 	.clear{display:block;clear:both;zoom:1}
 	.nomargin{margin:0 !important}@font-face{font-family:'Mejorandola';
-	src:url("../fonts/Mejorandola.eot?v=1.1");src:url("../fonts/Mejorandola.eot?#iefix?v=1.1") format('embedded-opentype'),
-	url("../fonts/Mejorandola.woff?v=1.1") format('woff'),url("../fonts/Mejorandola.ttf?v=1.1") format('truetype'),
-	url("../fonts/Mejorandola.svg#Mejorandola?v=1.1") format('svg');font-weight:normal;font-style:normal}[class^="icon-"]
+	src:url("static/fonts/Mejorandola.eot");src:url("static/fonts/Mejorandola.eot") format('embedded-opentype'),
+	url("static/fonts/Mejorandola.woff") format('woff'),url("static/fonts/Mejorandola.ttf") format('truetype'),
+	url("static/fonts/Mejorandola.svg") format('svg');font-weight:normal;font-style:normal}[class^="icon-"]
 	:before,[class*=" icon-"]
 	:before{font-family:'Mejorandola';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;
 	-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="icon-r-"]
