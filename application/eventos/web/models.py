@@ -16,3 +16,13 @@ class Empresa(models.Model):
     
     def __unicode__ (self):
         return self.nombre
+    
+class Inscripcion_Email(models.Model):
+    nombre = models.CharField(max_length=100, unique=True)
+    email = models.TextField(help_text='E-mail')
+    fecha_registro = models.DateTimeField(auto_now=True)
+
+    
+    def __unicode__ (self):
+        inscripcion = "%s %s"%(self.nombre,self.email)
+        return inscripcion
