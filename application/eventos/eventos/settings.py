@@ -34,6 +34,7 @@ MEDIA_URL = 'http://127.0.0.1:8000/media/'
 # Application definition
 
 INSTALLED_APPS = (
+    'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -9,29 +9,7 @@
 		<link rel="stylesheet" href="{{STATIC_URL}}css/fuentes.css" type="text/css"/>
 		<link rel="stylesheet" href="{{STATIC_URL}}css/estilo.css" type="text/css" media="all">
 		<script src="{{STATIC_URL}}js/jquery-1.3.2.js"></script>
-		<!--
-		<script>
-		$(document).ready(function() {
-		$('#aparecer').click(function() {
-		$("#oculto").slideDown("slow");
-		});
-		$('#cambiar').click(function() {
-		$("#oculto").html("Hola a todos");
-		});
-
-		$('#ocultar').click(function() {
-		$("#oculto").slideUp("slow");
-		});
-
-		$('#color').click(function() {
-		console.log("entro a color")
-		$("#oculto").css({
-		"background-color": "#000000",
-		"color": "#ffffff"
-		})
-		});
-		});
-		</script>-->
+	
 	</head>
 	<body>
 		<div class="wrapper">
@@ -45,20 +23,20 @@
 						<ul class="lista">
 
 							<li class="tab ">
-								<a href="/cursos/" title="cursos">Musica</a>
+								<a href="/musica/" title="cursos">Musica</a>
 							</li>
 							<li class="tab ">
-								<a href="/horarios" title="Horarios">Deportes</a>
+								<a href="/deportes" title="Horarios">Deportes</a>
 							</li>
 							<li class="tab ">
-								<a href="/conferencias" title="Conferencias">Conciertos</a>
+								<a href="/conciertos" title="Conferencias">Conciertos</a>
 							</li>
 							<li class="tab ">
 								<a href="/videos" title="Videos">Videos</a>
 							</li>
 
 							<li class="tab ">
-								<a href="/podcast" title="Podcast">Mas</a>
+								<a href="/Mas" title="Podcast">Mas</a>
 							</li>
 							<li class="tab" data-display="social-login">
 								<a class="ancla-menu" href="https://cursos.eventos.lo" title="Eventos"> <img src="{{STATIC_URL}}images/icon3.jpg" alt="eventos.lo" height="20" width="20" /> Login </a>
@@ -171,36 +149,12 @@
 			</article>
 
 			{% endif %}
-			<!--
-			<div class="live-banner">
-			<div class="gradient">
-			<div class="logo-live">
-			<h2>Eventos Cercanoo</h2>
-
-			{% if eventos %}
-
-			{% for e in eventos %}
-
-			<p>{{e.nombre}}</p>
-			<p>{{e.descripcion}}</p>
-			<p> <img src="{{MEDIA_URL}}{{e.imagen}}"></p>
-
-			{% endfor %}
-			{% else %}
-
-			<h2>no se registraron eventos</h2>
-
-			{% endif %}
-			</div>
-			</div>
-			</div>
-
-			-->
-		</div>
+			
+	</div>
 
 		<footer id="footer" class="footer clearfix">
-			<div class="container">
-				<img src="/static/images/logos/mejorandola-white.png" alt="Mejorando.la" width="158" height="36">
+			<div class="icon_at">
+				<img src="/static/images/icon3.jpg" alt="eventos" width="24" height="24">
 				<div class="right social-follow">
 					<div>
 						<span>Síguenos</span>

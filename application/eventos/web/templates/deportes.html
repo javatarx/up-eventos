@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Deportes</title>
+</head>
+
+<body>
+<h3>{{msg}}</h3>
+<form action="enviarcorreo.jsp" name="datos" method="post">
+Nombre: <input type="text" name="nombre"><br /> 
+Password: <input type="password" name="clave"><br />
+Sexo: <input type="radio" name="sexo" value="M">M  | <input type="radio" name="sexo" value="F">F<br />  
+Motivo de Contacto <select name="estacion"> 
+<option value="Contacto">Contacto</option>
+ <option value="Soporte">Soporte</option>
+<option value="Sugerencia">Sugerencia</option> 
+<option value="Otros">Otros</option> 
+</select>
+<br />
+Comentarios:<br /> <textarea name="comentario" rows="10" cols="40"></textarea>
+<br /><br />
+<input type="checkbox" name="suscribir" value="si">Suscribir a Newsletter<br />
+<input type="submit" value="Enviar"> <input type="reset" value="Borrar">
+</form>
+
+
+
+
+</body>
+</html>

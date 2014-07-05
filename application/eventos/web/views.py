@@ -8,3 +8,7 @@ def home_view(request):
     ctx = { 'eventos' : e}
     return render_to_response(template, ctx, context_instance=RequestContext(request))
 
+def deportes_view(request):
+    mensaje = "esto es un mensaje desde mis deportes"
+    ctx = {'msg':mensaje}
+    return render_to_response('template/deportes.html',ctx, context_instance=RequestContext(request))
