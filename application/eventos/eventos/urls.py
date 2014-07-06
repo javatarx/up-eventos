@@ -8,5 +8,5 @@ urlpatterns = patterns('',
     url(r'^$', 'web.views.home_view', name="vista_inicio"),
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root':settings.MEDIA_ROOT}),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^deportes/$','deportes_view',name='vista_deprotes'),
+    #url(r'^deportes/','deportes_view',name='vista_deprotes'),
 )

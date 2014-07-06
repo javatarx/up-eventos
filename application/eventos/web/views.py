@@ -11,4 +11,4 @@ def home_view(request):
 def deportes_view(request):
     mensaje = "esto es un mensaje desde mis deportes"
     ctx = {'msg':mensaje}
-    return render_to_response('template/deportes.html',ctx, context_instance=RequestContext(request))
+    return render_to_response('deportes.html',ctx, context_instance=RequestContext(request))
